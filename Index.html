@@ -6,6 +6,7 @@
     <title>Document</title>
     <link rel="stylesheet" href="./style.css"> 
 </head>
+
 <body>
     <section>
         <nav>
@@ -17,7 +18,7 @@
             </ul>
         </nav>
         <header>
-            <div class="row"></div>
+            <div class="row">
             <div>
                 <h1>Best place to learn frontend</h1>
                 <p class="subheader">Go from being an absolute beginner to being a pro with a simplified process</p>
@@ -26,34 +27,44 @@
             <figure>
                 <img src="./assets/laptop.png" alt="Home page image">
             </figure> 
-            <div></div> 
+         </div>
         </header>  
     </section>
 
    <main>
     <section id="about">
         <h2>About</h2>
-        <div class="section_description">
-            <p> Lorem Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem placeat, quibusdam numquam totam magni et eum. Ipsam, ullam sit! Aliquam corporis dolorem cumque. Officia corrupti, facilis aspernatur magni iste laboriosam! LoremLorem Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem placeat, quibusdam numquam totam magni et eum.
-                 Ipsam, ullam sit! Aliquam corporis dolorem cumque. Officia corrupti, facilis aspernatur magni iste laboriosam! </p>
-        <figure>
-            <img src="./assets/about.jpg" alt="About page image">
-        </figure>
-        <div>
-         <p>
-            Coding, also known as computer programming, is the process of writing step-by-step instructions that tell a computer how to perform specific tasks. It serves as the universal translator between human logic and digital technology, powering everything from mobile apps and websites to medical equipment and video games. 
-        </p>
+        <div class="row">
+          <div class="section__description">
+            <div class="section__description--wrapper">
+              <p class="section__description--para">
+                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem placeat, quibusdam numquam totam magni et eum. Ipsam, ullam sit! Aliquam corporis dolorem cumque. Officia corrupti, facilis aspernatur magni iste laboriosam!
+              </p>
+              <p class="section__description--para">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem placeat, quibusdam numquam totam magni et eum. Ipsam, ullam sit! Aliquam corporis dolorem cumque. Officia corrupti, facilis aspernatur magni iste laboriosam! 
+              </p>
+            </div>
+            <figure class="about__img--wrapper">
+            <img src="./assets/about.jpg" alt="">
+            </figure>
         </div>
-        </section>
-
+    </section>
+         
     <section id="discord">
         <h2>Discord</h2>
-        <figure>
+         <div class="row"></div>
+         <div class="section__description">    
+         <figure class="section__description--wrapper">
             <img src="./assets/discord.png" alt="Discord image">
-        </figure>   
-        <div>
-            <p>Join our Discord server to connect with other learners and get help with your coding journey!
-             </p>
+         </figure>  
+        <div class="section__description:--wrapper">
+            <p class="section__description--para">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem placeat, quibusdam numquam totam magni et eum. Ipsam, ullam sit! Aliquam corporis dolorem cumque. Officia corrupti, facilis aspernatur magni iste laboriosam! LoremLorem Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem placeat, quibusdam numquam totam magni et eum. Ipsam, ullam sit! Aliquam corporis dolorem cumque. Officia corrupti, facilis aspernatur magni iste laboriosam!
+            </p>
+            <p class="section__description--para">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem placeat, quibusdam numquam totam magni et eum. Ipsam, ullam sit! Aliquam corporis dolorem cumque. Officia corrupti, facilis aspernatur magni iste laboriosam! LoremLorem Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem placeat, quibusdam numquam totam magni et eum. Ipsam, ullam sit! Aliquam corporis dolorem cumque. Officia corrupti, facilis aspernatur magni iste laboriosam!
+            </p>
+        </div>
         </div>
     </section>
 
@@ -61,20 +72,21 @@
         <h2>Contact</h2>
         <form action="">
             <span>Email</span>
-            <input type="text" placeholder="jane@example.com"></textarea>
+            <input type="email" placeholder="jane@example.com">
             <span>Message</span>
-            <textarea type="text" placeholder="jane@example.com"></textarea>
-        </form>
+            <textarea type="text" placeholder="Cool website, lets get connected"></textarea> 
+            <button> Contact Us!</button>
+        </form>         
     </section>
 </main>
 
 <footer>
-    <img src="./assets/FES.svg" alt="Footer image">
-    <div>
-        <a href="#about">About</a>
-        <a href="#discord">Discord</a>
-        <a href="#contact">Contact</a>
-        <a href="">Courses</a>
+    <img class="footer__logo" src="./assets/FES.svg" alt="Footer image">
+    <div class="footer__links">
+        <a class="footer__link" href="#about">About</a>
+        <a class="footer__link" href="#discord">Discord</a>
+        <a class="footer__link" href="#contact">Contact</a>
+        <a class="footer__link" href="">Courses</a>
     </div> 
     <p>Copyright Frontend Simplified</p>
 </footer>
